@@ -1,0 +1,551 @@
+*{
+	box-sizing: border-box;								
+}
+
+
+/* Colors and toggle animation: */
+.theme1__body{
+	color: white;
+	background-color: hsl(222, 26%, 31%);
+}
+
+.theme1__toggle{
+	background-color: hsl(223, 31%, 20%);
+}
+
+.theme1__toggle-button{
+	margin-left: 4.5%;									/* Izquierda 4.5% --- Centro: 36.5% ---  Derecha: 70.7 */ 
+	background-color: hsl(6, 63%, 50%);
+	-webkit-animation-name: theme1_toggle;
+	        animation-name: theme1_toggle;
+	-webkit-animation-duration: 0.2s;
+	        animation-duration: 0.2s;
+}
+
+@-webkit-keyframes theme1_toggle {
+	from{
+		margin-left: 70.7%;
+	}
+	to{
+		margin-left: 4.5%;
+	}
+}
+
+@keyframes theme1_toggle {
+	from{
+		margin-left: 70.7%;
+	}
+	to{
+		margin-left: 4.5%;
+	}
+}
+
+.theme1__screen-container{
+	background-color: hsl(224, 36%, 15%);
+}
+
+.theme1__key-pad{
+	background-color: hsl(223, 31%, 20%);
+}
+
+.theme1__key1{
+	color: hsl(221, 14%, 31%);			
+	background-color: hsl(30, 25%, 89%);
+	box-shadow: 0px 0.12em hsl(28, 16%, 65%);
+}
+
+.theme1__key2{
+	color: white;
+	background-color: hsl(225, 21%, 49%);
+	box-shadow: 0px 0.18em hsl(224, 28%, 35%);
+}
+
+.theme1__key3{
+	color: white;
+	background-color: hsl(6, 63%, 50%);
+	box-shadow: 0px 0.18em hsl(6, 70%, 34%);
+}
+
+
+.theme2__body{
+	color: hsl(60, 10%, 19%);
+	background-color: hsl(0, 0%, 90%);
+}
+
+.theme2__toggle{
+	background-color: hsl(0, 5%, 81%);
+}
+
+.theme2__toggle-button{
+	background-color: hsl(25, 98%, 40%);
+	margin-left: 36.5%;									/*Izquierda 4.5% --- Centro: 36.5% ---  Derecha: 70.7*/
+	-webkit-animation-name: theme2_toggle;
+	        animation-name: theme2_toggle;
+	-webkit-animation-duration: 0.2s;
+	        animation-duration: 0.2s;
+}
+
+@-webkit-keyframes theme2_toggle {
+	from{
+		margin-left: 4.5%;
+	}
+	to{
+		margin-left: 36.5%;
+	}
+}
+
+@keyframes theme2_toggle {
+	from{
+		margin-left: 4.5%;
+	}
+	to{
+		margin-left: 36.5%;
+	}
+}
+
+.theme2__screen-container{
+	background-color: hsl(0, 0%, 93%);
+}
+
+.theme2__key-pad{
+	background-color: hsl(0, 5%, 81%);
+}
+
+.theme2__key1{
+	color: hsl(60, 10%, 19%);			
+	background-color: hsl(45, 7%, 89%);
+	box-shadow: 0px 0.12em hsl(35, 11%, 61%);
+}
+
+.theme2__key2{
+	color: white;
+	background-color: hsl(185, 42%, 37%);
+	box-shadow: 0px 0.18em hsl(185, 58%, 25%);
+}
+
+.theme2__key3{
+	color: white;
+	background-color: hsl(25, 98%, 40%);
+	box-shadow: 0px 0.18em hsl(25, 99%, 27%);
+}
+
+
+.theme3__body{
+	color: hsl(52, 100%, 62%);
+	background-color: hsl(268, 75%, 9%);
+}
+
+.theme3__toggle{
+	background-color: hsl(268, 71%, 12%);
+}
+
+.theme3__toggle-button{
+	background-color: hsl(176, 100%, 44%);
+	margin-left: 70.7%;									/* Izquierda 4.5% --- Centro: 36.5% ---  Derecha: 70.7 */
+	-webkit-animation-name: theme3_toggle;
+	        animation-name: theme3_toggle;
+	-webkit-animation-duration: 0.2s;
+	        animation-duration: 0.2s;
+}
+
+@-webkit-keyframes theme3_toggle {
+	from{
+		margin-left: 36.5%;
+	}
+	to{
+		margin-left: 70.7%;
+	}
+}
+
+@keyframes theme3_toggle {
+	from{
+		margin-left: 36.5%;
+	}
+	to{
+		margin-left: 70.7%;
+	}
+}
+
+.theme3__screen-container{
+	background-color: hsl(268, 71%, 12%);
+}
+
+.theme3__key-pad{
+	background-color: hsl(268, 71%, 12%);
+}
+
+.theme3__key1{
+	color: hsl(52, 100%, 62%);			
+	background-color: hsl(268, 47%, 21%);
+	box-shadow: 0px 0.12em hsl(290, 70%, 36%);
+}
+
+.theme3__key2{
+	color: white;
+	background-color: hsl(281, 89%, 26%);
+	box-shadow: 0px 0.18em hsl(285, 91%, 52%);
+}
+
+.theme3__key3{
+	color: hsl(198, 20%, 13%);
+	background-color: hsl(176, 100%, 44%);
+	box-shadow: 0px 0.18em hsl(177, 92%, 70%);
+}
+
+
+/* styles: */
+body{
+	font-family: 'Spartan', sans-serif;
+	font-size: 2rem;
+}
+
+.calculator{
+	margin-left: auto;
+	margin-right: auto;
+	width: 375px;											  
+	padding: 0.5em;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;									/* Con esto el usuario no puede seleccionar el texto. Esto se aplica en las palabras, letras y numero de los textos como de los botones */
+	-webkit-tap-highlight-color: transparent;			/* Con esto hago que desaparezca ese molesto recuadro celeste cuando presiono un boton con el movil */ 
+}
+
+.top-zone{
+	display: flex;
+	justify-content: space-between
+}
+
+.theme-total-area{
+	margin-top: 1rem;
+	display: -ms-grid;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	-ms-grid-columns: 4.5rem 4.9rem;
+	grid-template-columns: 4.5rem 4.9rem;
+	-ms-grid-rows: 1.5rem 1.5rem;
+	grid-template-rows: 1.5rem 1.5rem;
+	font-size: 0.8rem;	
+}
+
+.theme-total-area > *:nth-child(1){
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;	
+}
+
+.theme-total-area > *:nth-child(2){
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;	
+}
+
+.theme-total-area > *:nth-child(3){
+	-ms-grid-row: 2;
+	-ms-grid-column: 1;	
+}
+
+.theme-total-area > *:nth-child(4){
+	-ms-grid-row: 2;
+	-ms-grid-column: 2;	
+}
+
+.theme-text{
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 1;
+	grid-column: 1 / 2 ;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	grid-row: 2 / 3 ;
+	margin-top: 1.12em;
+}
+
+.toggle-options{
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
+	grid-column: 2 / 3 ;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 1;
+	grid-row: 1 / 2 ;
+	display: flex;
+	justify-content: space-around
+}
+
+.toggle{
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
+	grid-column: 2 / 3 ;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	grid-row: 2 / 3 ;
+	display: -ms-grid;
+	display: grid;
+	align-items: center;	
+	border-radius: 10em;
+	height: 1.7rem;
+	width: 100%;
+	cursor: pointer;
+}
+
+.toggle-button{
+	height: 1.15rem;
+	width: 1.15rem;
+	border-radius: 100rem;
+}
+
+.screen-container{
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.screen-content{
+	margin-left: auto;
+	margin-right: auto;	
+	font-family: 'Roboto Mono', monospace;	
+	font-size: 2.5rem;
+	text-align: end;
+}
+
+.key-pad{
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	-ms-grid-rows: 2em 1rem 2em 1rem 2em 1rem 2em 1rem 2em;
+	grid-template-rows: 2em 2em 2em 2em 2em;
+	-moz-column-gap: 1rem;
+	     column-gap: 1rem;
+	row-gap: 1rem;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.key-pad > *:nth-child(1){
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+}
+
+.key-pad > *:nth-child(2){
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+}
+
+.key-pad > *:nth-child(3){
+	-ms-grid-row: 1;
+	-ms-grid-column: 5;
+}
+
+.key-pad > *:nth-child(4){
+	-ms-grid-row: 1;
+	-ms-grid-column: 7;
+}
+
+.key-pad > *:nth-child(5){
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+}
+
+.key-pad > *:nth-child(6){
+	-ms-grid-row: 3;
+	-ms-grid-column: 3;
+}
+
+.key-pad > *:nth-child(7){
+	-ms-grid-row: 3;
+	-ms-grid-column: 5;
+}
+
+.key-pad > *:nth-child(8){
+	-ms-grid-row: 3;
+	-ms-grid-column: 7;
+}
+
+.key-pad > *:nth-child(9){
+	-ms-grid-row: 5;
+	-ms-grid-column: 1;
+}
+
+.key-pad > *:nth-child(10){
+	-ms-grid-row: 5;
+	-ms-grid-column: 3;
+}
+
+.key-pad > *:nth-child(11){
+	-ms-grid-row: 5;
+	-ms-grid-column: 5;
+}
+
+.key-pad > *:nth-child(12){
+	-ms-grid-row: 5;
+	-ms-grid-column: 7;
+}
+
+.key-pad > *:nth-child(13){
+	-ms-grid-row: 7;
+	-ms-grid-column: 1;
+}
+
+.key-pad > *:nth-child(14){
+	-ms-grid-row: 7;
+	-ms-grid-column: 3;
+}
+
+.key-pad > *:nth-child(15){
+	-ms-grid-row: 7;
+	-ms-grid-column: 5;
+}
+
+.key-pad > *:nth-child(16){
+	-ms-grid-row: 7;
+	-ms-grid-column: 7;
+}
+
+.key-pad > *:nth-child(17){
+	-ms-grid-row: 9;
+	-ms-grid-column: 1;
+}
+
+.key-pad > *:nth-child(18){
+	-ms-grid-row: 9;
+	-ms-grid-column: 3;
+}
+
+.key-pad > *:nth-child(19){
+	-ms-grid-row: 9;
+	-ms-grid-column: 5;
+}
+
+.key-pad > *:nth-child(20){
+	-ms-grid-row: 9;
+	-ms-grid-column: 7;
+}
+
+.key{
+	display: -ms-grid;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	padding-top: 0.2em;
+	border-radius: 0.2em;
+	cursor: pointer;
+}
+
+.key:active{														/* Esta es la animación que hace el boton cuando hago click sobre el */
+	transform: translateY(0.12em);
+	box-shadow: 0px 0em transparent;
+}
+
+.key:first-child{
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 1;
+	grid-column: 1 / 2 ;
+	-ms-grid-row: 3;
+	-ms-grid-row-span: 1;
+	grid-row: 3 / 4 ;
+}			
+
+.key:nth-child(2){
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
+	grid-column: 2 / 3 ;
+	-ms-grid-row: 3;
+	-ms-grid-row-span: 1;
+	grid-row: 3 / 4 ;
+}
+.key:nth-child(3){
+	-ms-grid-column: 3;
+	-ms-grid-column-span: 1;
+	grid-column: 3 / 4 ;
+	-ms-grid-row: 3;
+	-ms-grid-row-span: 1;
+	grid-row: 3 / 4 ;
+}
+.key:nth-child(4){
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 1;
+	grid-column: 1 / 2 ;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	grid-row: 2 / 3 ;
+}
+.key:nth-child(5){
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
+	grid-column: 2 / 3 ;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	grid-row: 2 / 3 ;
+}
+.key:nth-child(6){
+	-ms-grid-column: 3;
+	-ms-grid-column-span: 1;
+	grid-column: 3 / 4 ;
+	-ms-grid-row: 2;
+	-ms-grid-row-span: 1;
+	grid-row: 2 / 3 ;
+}
+
+.key:nth-child(10){
+	-ms-grid-column: 2;
+	-ms-grid-column-span: 1;
+	grid-column: 2 / 3 ;
+	-ms-grid-row: 4;
+	-ms-grid-row-span: 1;
+	grid-row: 4 / 5 ;
+}
+.key:nth-child(11){
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 1;
+	grid-column: 1 / 2 ;
+	-ms-grid-row: 4;
+	-ms-grid-row-span: 1;
+	grid-row: 4 / 5 ;
+}
+
+.key:nth-child(14){
+	-ms-grid-column: 4;
+	-ms-grid-column-span: 1;
+	grid-column: 4 / 5 ;
+	-ms-grid-row: 4;
+	-ms-grid-row-span: 1;
+	grid-row: 4 / 5 ;
+	padding-bottom: 0.2em;
+}
+
+.key:nth-child(16){
+	-ms-grid-column: 4;
+	-ms-grid-column-span: 1;
+	grid-column: 4 / 5;
+	-ms-grid-row: 1;
+	-ms-grid-row-span: 1;
+	grid-row: 1 / 2;
+	font-size: 1.4rem;
+}
+.key:nth-child(17){
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 2;
+	grid-column: 1 / 3;
+	-ms-grid-row: 5;
+	-ms-grid-row-span: 1;
+	grid-row: 5 / 6;
+	font-size: 1.4rem;
+}
+.key:nth-child(18){
+	-ms-grid-column: 3;
+	-ms-grid-column-span: 2;
+	grid-column: 3 / 5;
+	-ms-grid-row: 5;
+	-ms-grid-row-span: 1;
+	grid-row: 5 / 6;
+	font-size: 1.4rem;
+}
+
+@media screen and (min-width: 480px) {
+	.calculator{
+		width: 80vw;
+		min-width: 375px;
+		max-width: 550px;
+	}
+}
