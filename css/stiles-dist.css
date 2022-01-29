@@ -195,13 +195,16 @@
 
 /* styles: */
 body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100vw;
 	font-family: 'Spartan', sans-serif;
 	font-size: 2rem;
 }
 
 .calculator{
-	margin-left: auto;
-	margin-right: auto;
 	width: 375px;											  
 	padding: 0.5em;
 	-webkit-user-select: none;
