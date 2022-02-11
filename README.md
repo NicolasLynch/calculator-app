@@ -4,4 +4,4 @@
 
 ## Install dependencies:
 
-No need to do any previous installation. Just download it and run it
+No need to do any previous installation. Just download it and run it.
